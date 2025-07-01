@@ -21,7 +21,7 @@ st.set_page_config(
 def load_data():
     """Load and cache the transaction data"""
     try:
-        data = pd.read_csv("../data/processed/cleaned_transactions.csv")
+        data = pd.read_csv("data/processed/cleaned_transactions.csv")
         # Convert date columns to datetime
         date_cols = ['Invoice_Date', 'Due_Date', 'Payment_Date']
         for col in date_cols:
